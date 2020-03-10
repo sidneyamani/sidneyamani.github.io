@@ -2,23 +2,16 @@
   <head>
   <style type="text/css">
   body {
-   background-color: #003552;
-   margin: 100px 0 0 0;
+    background: #1e9ccf url(launch.jpg) no-repeat left bottom;
+    height: 100%;
+    margin: 100px 0 0 0;
   }
-  .image {
-     background: url(launch.png);
-     background-repeat: no-repeat;
-     background-size: 100% auto;
-     height:100%;
+  .wrapper {
+    width: 70%;
+    float: right;
   }
   h2 {
-    font-size: 4em;
-    text-align: center;
-    color: white;
-    padding: 0;
-  }
-  h3 {
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
     color: white;
     padding: 0;
@@ -26,20 +19,21 @@
 </style>
 </head>
 <body>
-  <h2>App Store Open Beta</h2>
-  <h3>
-  <script type='text/javascript'>
-    // Set the date we're counting down to
-    var countDownDate = new Date("April 6, 2020 08:00:00").getTime();
-    // Get today's date and time
-    var now = new Date().getTime();
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-    // Calculate number of days.
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    document.write("Launch in "+ days + " day" + (days > 1 ?  "s" : ""))
-  </script>
-  </h3>
-  <div class="image"></div>
+  <div class="wrapper">
+    <h2>App Store Open Beta</h2>
+    <h2>
+      <script type='text/javascript'>
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 6, 2020 08:00:00").getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Calculate number of days.
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        document.write("Launch in "+ days + " day" + (days > 1 ?  "s" : ""))
+      </script>
+    </h2>
+  </div>
 </body>
 </html>
