@@ -16,6 +16,10 @@
     color: white;
     padding: 0;
   }
+ a:link, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
@@ -31,7 +35,11 @@
         var distance = countDownDate - now;
         // Calculate number of days.
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        document.write("Launch in "+ days + " day" + (days > 1 ?  "s" : ""))
+        if (days <= 0) {
+          document.write("<a href=\"http://canva.com/developers\">Build your app</a>")
+        } else {
+          document.write("Launch in "+ days + " day" + (days > 1 ?  "s" : ""))
+        }
       </script>
     </h2>
   </div>
